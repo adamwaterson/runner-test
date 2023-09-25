@@ -6,5 +6,10 @@ jobs:
   Explore-GitHub-Actions:
     # You need to use the INSTALLATION_NAME from the previous step
     runs-on: arc-runner-set
-    steps:
-    - run: echo "🎉 This job uses runner scale set runners!"
+    steps:   
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+    - name: List Dotnet SDKs
+      run: dotnet --list-sdks
