@@ -17,4 +17,4 @@ jobs:
       env: 
         DOTNET_INSTALL_DIR: /home/runner/deps
     - name: Restore dotnet nuget packages
-      run: dotnet restore
+      run: dotnet restore --locked-mode
