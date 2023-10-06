@@ -8,7 +8,7 @@ jobs:
     runs-on: arc-runner-set
     steps:
     - name: Call Custom Action  
-      uses: adamwaterson/create-repo-test
+      uses: adamwaterson/create-repo-test@latest
       with:
         github-response: 'From ARC demo repo'
     - name: checkout repo
