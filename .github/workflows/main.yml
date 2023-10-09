@@ -9,8 +9,6 @@ jobs:
     steps:
     - name: Call Custom Action  
       uses: adamwaterson/create-repo-test@main      
-      with:
-        Response: 'From ARC demo repo'
       env:
         Response: 'From ARC demo repo'
     - name: checkout repo
