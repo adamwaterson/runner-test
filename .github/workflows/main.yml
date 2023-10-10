@@ -2,12 +2,13 @@ name: Actions Runner Controller Demo
 on:
   workflow_dispatch:
 
-jobs:
+jobs: 
   Explore-GitHub-Actions:
-    # You need to use the INSTALLATION_NAME from the previous step
+    container: 
+      image: docker.io/library/adamsrunner:0.0.1  
     runs-on: arc-runner-set
     steps:
-    - name: Call Custom Action  
+    - name: Call Custom Action
       uses: adamwaterson/create-repo-test@main
       with:        
         Response: From ARC demo repo
