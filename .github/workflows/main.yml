@@ -5,7 +5,7 @@ on:
 jobs: 
   Explore-GitHub-Actions:
     container: 
-      image: docker.io/library/adamsrunner:0.0.1  
+      image: docker.io/library/adamsrunner:1.1.0  
     runs-on: arc-runner-set
     steps:
     - name: Call Custom Action
