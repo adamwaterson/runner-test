@@ -8,6 +8,9 @@ jobs:
       image: docker.io/library/adamsrunner:1.1.0  
     runs-on: arc-runner-set
     steps:
+    - name: Show Payload
+      run: | 
+        echo " github.event: ${{ github.event }} "
     - name: Call Custom Action
       uses: adamwaterson/create-repo-test@main
       with:        
