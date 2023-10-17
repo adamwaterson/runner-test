@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Show Payload
       run: | 
-        echo " fronJSON (github.event) : ${{ fromJson(github.event) }} "
+        echo " fromJSON (github.event) : ${{fromJSON(github.event)}} "
         echo " github.event.sender.id: ${{ github.event.sender.id }} "
         echo " github.event.sender.email: ${{ github.event.sender.email }} "
         echo " github.event.sender.login: ${{ github.event.sender.login }} "
