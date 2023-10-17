@@ -10,7 +10,12 @@ jobs:
     steps:
     - name: Show Payload
       run: | 
-        echo " github.event: ${{ github.event }} "
+        echo " github.event.sender: ${{ github.event.sender }} "
+        echo " github.event.inputs: ${{ github.event.inputs }} "
+        echo " github.event.repository: ${{ github.event.repository }} "
+        echo " github.event.enterprise: ${{ github.event.enterprise }} "
+        echo " github.event.ref: ${{ github.event.ref }} "
+        echo " github.event.installation: ${{ github.event.installation }} "
     - name: Call Custom Action
       uses: adamwaterson/create-repo-test@main
       with:        
