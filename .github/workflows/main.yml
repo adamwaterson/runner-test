@@ -11,19 +11,6 @@ jobs:
     - name: Show Payload
       run: | 
         echo " toJson (github.event) : '${{toJson(github.event)}} "
-        echo " github.event.sender.id: ${{ github.event.sender.id }} "
-        echo " github.event.sender.email: ${{ github.event.sender.email }} "
-        echo " github.event.sender.login: ${{ github.event.sender.login }} "
-        echo " github.event.sender.name: ${{ github.event.sender.name }} "
-        echo " github.event.sender.node_id: ${{ github.event.sender.node_id }} "
-        echo " github.event.inputs: ${{ github.event.inputs }} "
-        echo " github.event.repository.master_branch: ${{ github.event.repository.master_branch }} "
-        echo " github.event.enterprise.name: ${{ github.event.enterprise.name }} "
-        echo " github.event.enterprise.id: ${{ github.event.enterprise.id }} "
-        echo " github.event.enterprise.node_id: ${{ github.event.enterprise.node_id }} "        
-        echo " github.event.ref: ${{ github.event.ref }} "
-        echo " github.event.installation.id: ${{ github.event.installation.id }} "
-        echo " github.event.installation.node_id: ${{ github.event.installation.node_id }} "
     - name: Call Custom Action
       uses: adamwaterson/create-repo-test@main
       with:        
